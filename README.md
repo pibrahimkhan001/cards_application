@@ -13,10 +13,10 @@ This project is a full-stack web application that displays cards of different us
 To get started with this project, follow these steps.
 
 ### 1. Clone the repository
-'''
+```
 git clone (https://github.com/pibrahimkhan001/cards_application.git)
 cd user-cards-app
-'''
+```
 ### 2. Install dependencies
 Navigate to both the backend and frontend directories and install the necessary npm packages.
 
