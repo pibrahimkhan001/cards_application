@@ -21,33 +21,33 @@ cd user-cards-app
 Navigate to both the backend and frontend directories and install the necessary npm packages.
 
 For the backend:
-'''
+```
 cd server
 npm install
-'''
+```
 For the frontend:
-'''
+```
 cd ../client
 npm install
-'''
+```
 ## Backend Setup
 ### 1. Environment Variables
 Create a .env file in the backend directory and add the following variables:
-'''
+```
 MONGO_URI=mongodb://127.0.0.1:27017/demoDB
 PORT=5000
-'''
+```
 ### 2. Start the Backend Server
 Start the backend server by running the following command in the backend directory:
-'''
+```
 node server.js
-'''
+```
 ## Frontend Setup
 ### 1. Start the React Development Server
 Navigate to the frontend directory and start the React development server:
-'''
+```
 npm start
-'''
+```
 The frontend should now be running on http://localhost:3000.
 
 ## Database Setup
@@ -56,12 +56,12 @@ Ensure MongoDB is installed and running on your machine. Create a database named
 
 ### 2. Import Data into MongoDB
 You can import the initial data into the MongoDB demoDB database using the mongoimport command. Assuming you have a JSON file named users.json with your user data, run the following command:
-'''
+```
 mongoimport --db demoDB --collection users --file users.json --jsonArray
-'''
+```
 ### Example users.json File
 Here's an example of what your users.json file might look like:
-'''
+```
 [
     {
         "albumId": 1,
@@ -88,7 +88,7 @@ Here's an example of what your users.json file might look like:
         "image": "/images/rahul.jpg"
     }
 ]
-'''
+```
 ### 3. Ensure the Images Are in Place
 Make sure the images referenced in the image field are placed in the backend/images directory.
 
